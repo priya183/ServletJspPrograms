@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+ <!-- <display-name>DemoApp</display-name>
+ <servlet>
+ <servlet-name>abc</servlet-name>
+ <servlet-class>com.ex.AddServlet</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>abc</servlet-name>
+ <url-pattern>/add</url-pattern>
+ </servlet-mapping>
+ 
+  <servlet>
+ <servlet-name>pqr</servlet-name>
+ <servlet-class>com.ex.SquareServlet</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>pqr</servlet-name>
+ <url-pattern>/sq</url-pattern>
+ </servlet-mapping>
+  --> 
+ <servlet>
+ <servlet-name>aaa</servlet-name>
+ <servlet-class>com.ex.MyServlet</servlet-class>
+ 
+ 
+ <!-- if u want fetch any specified value -->
+ <init-param>
+ <param-name>name</param-name>
+ <param-value>Shubham</param-value>
+ </init-param>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>aaa</servlet-name>
+ <url-pattern>/home</url-pattern>
+ </servlet-mapping>
+ 
+ <!-- used to specify/initialize some values -->
+ <context-param>
+ <param-name>name</param-name>
+ <param-value>Priya</param-value>
+ </context-param>
+ 
+ <context-param>
+ <param-name>phone</param-name>
+ <param-value>redmi</param-value>
+ </context-param>
+ 
+</web-app>
